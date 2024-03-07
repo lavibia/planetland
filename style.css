@@ -96,10 +96,9 @@ hr{
     margin:50px 0px;
     align-self: center;
     display: grid;
-   grid-template-columns: repeat(12,65px);
-   grid-template-rows: repeat(12,60px);
-   gap: 12px 30px;
-   max-width: 1110px;
+   grid-template-columns: repeat(12,1fr);
+   grid-template-rows: repeat(12,3.75em);
+   gap: 0.75em 1.8em;
 }
 
 .img-holder{
@@ -153,6 +152,7 @@ a{
     list-style: none;
 }
 .button-holder button{
+    width: 100%;
     text-align: left;
 }
 .button-holder span{
@@ -229,4 +229,40 @@ button:hover{
 .active-neptune{
     background-color: var(--color-neptune);
     border-color: var(--color-neptune);
+}
+/* tabs */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .header{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        height: fit-content;
+        margin: 0;;
+    }
+    .logo{
+        margin: 20px 0px;
+        justify-self: center;
+    }
+    .nav{
+        margin: 0px 20px;
+    }
+    .content{
+        padding: 30px;
+    }
+    .img-holder{
+        grid-area: 1/1/6/13;
+    }
+    .content-holder{
+        grid-area: 6/1/11/6;
+    }
+    .button-holder{
+        grid-area: 7/8/10/13;
+        justify-content: end;
+    }
+}
+/* phones */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
 }
