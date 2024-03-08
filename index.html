@@ -16,9 +16,38 @@
     <div class="header">
       <p class="logo">THE PLANETS</p>
       <!-- <nav> -->
+        <div class="hamburger"><img src="./assets/icon-hamburger.svg" alt=""></div>
+        <nav class="phone-nav">
+          <ul>
+            <li><div class="circle"><a href="./index.html">
+              <h4>MERCURY</h4>
+            </a></div>
+              </li>
+            <li><a href="">
+                <h4>VENUS</h4>
+              </a></li>
+            <li><a href="">
+                <h4>EARTH</h4>
+              </a></li>
+            <li><a href="">
+                <h4>MARS</h4>
+              </a></li>
+            <li><a href="">
+                <h4>JUPITER</h4>
+              </a></li>
+            <li><a href="">
+                <h4>SATURN</h4>
+              </a></li>
+            <li><a href="">
+                <h4>URANUS</h4>
+              </a></li>
+            <li><a href="">
+                <h4>NEPTUNE</h4>
+              </a></li>
+          </ul>
+        </nav>
       <ul class="nav">
           <li>
-            <div class="nav-color  bg-mercury"> </div>
             <a href="">
               <h4>MERCURY</h4>
             </a></li>
@@ -85,11 +114,12 @@
     </div>
     <div class="button-holder">
       <ol>
-        <li><button class="btn-content overview active bg-mercury "><span class="btn-text-number">01</span>OVERVIEW</button></li>
-        <li><button class="btn-content structure"><span class="btn-text-number">02</span>INTERNAL STRUCTURE</button>
+        <li><button class="btn-content overview active  " id="btnOverview"><span class="btn-text-number">01</span>OVERVIEW</button></li>
+        <li><button class="btn-content structure" id="btnStructure"><span class="btn-text-number">02</span>INTERNAL STRUCTURE</button>
         </li>
-        <li><button class="btn-content"><span class="btn-text-number">03</span>SURFACE GEOLOGY</button></li>
+        <li><button class="btn-content" id="btnSurface"><span class="btn-text-number">03</span>SURFACE GEOLOGY</button></li>
       </ol>
+      <hr class="phone-hr">
     </div>
     <div class="summary-holder">
       <div class="rotation-time">
