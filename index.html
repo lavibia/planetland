@@ -15,40 +15,44 @@
   <header>
     <div class="header">
       <p class="logo">THE PLANETS</p>
+      <!-- <nav> -->
       <ul class="nav">
-        <li><a href="">
-            <h4>MERCURY</h4>
-          </a></li>
-        <li><a href="">
-            <h4>VENUS</h4>
-          </a></li>
-        <li><a href="">
-            <h4>EARTH</h4>
-          </a></li>
-        <li><a href="">
-            <h4>MARS</h4>
-          </a></li>
-        <li><a href="">
-            <h4>JUPITER</h4>
-          </a></li>
-        <li><a href="">
-            <h4>SATURN</h4>
-          </a></li>
-        <li><a href="">
-            <h4>URANUS</h4>
-          </a></li>
-        <li><a href="">
-            <h4>NEPTUNE</h4>
-          </a></li>
-      </ul>
+          <li>
+            <div class="nav-color  bg-mercury"> </div>
+            <a href="">
+              <h4>MERCURY</h4>
+            </a></li>
+          <li><a href="">
+              <h4>VENUS</h4>
+            </a></li>
+          <li><a href="">
+              <h4>EARTH</h4>
+            </a></li>
+          <li><a href="">
+              <h4>MARS</h4>
+            </a></li>
+          <li><a href="">
+              <h4>JUPITER</h4>
+            </a></li>
+          <li><a href="">
+              <h4>SATURN</h4>
+            </a></li>
+          <li><a href="">
+              <h4>URANUS</h4>
+            </a></li>
+          <li><a href="">
+              <h4>NEPTUNE</h4>
+            </a></li>
+        </ul>
+      <!-- </nav> -->
     </div>
     <hr>
   </header>
   <div class="content">
     <div class="img-holder">
-      <object data="./assets/planet-mercury.svg" width="300" height="300"> </object>
-      <object class="hidden" data="./assets/planet-mercury-internal.svg" width="300" height="300"> </object>
-      <img class="hidden" src="./assets/geology-mercury.png" alt="Geology Mercury" width="163" height="199">
+      <object data="./assets/planet-mercury.svg" width="290" height="290"> </object>
+      <object class="" data="./assets/planet-mercury-internal.svg" width="290" height="290"> </object>
+      <img class="" src="./assets/geology-mercury.png" alt="Geology Mercury" width="163" height="199">
     </div>
     <div class="content-holder">
       <h1 id="title">MERCURY</h1>
@@ -62,27 +66,28 @@
       </div>
       <div class="structure-holder hidden">
         <p>Mercury appears to have a solid silicate crust and mantle overlying a
-        solid, iron sulfide outer core layer, a deeper liquid core layer, and
-        a solid inner core. The planet's density is the second highest in the
-        Solar System at 5.427 g/cm3 , only slightly less than Earth's density.</p>
-        <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure">Wikipedia <object
-          data="./assets/icon-source.svg"></object> </a></p>
-       
+          solid, iron sulfide outer core layer, a deeper liquid core layer, and
+          a solid inner core. The planet's density is the second highest in the
+          Solar System at 5.427 g/cm3 , only slightly less than Earth's density.</p>
+        <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure">Wikipedia
+            <object data="./assets/icon-source.svg"></object> </a></p>
+
       </div>
       <div class="geology-holder hidden">
-       <p> Mercury's surface is similar in appearance to that of the Moon, showing
-        extensive mare-like plains and heavy cratering, indicating that it has
-        been geologically inactive for billions of years. It is more heterogeneous
-        than either Mars's or the Moon's.</p>
-        <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology">Wikipedia <object
-          data="./assets/icon-source.svg"></object> </a></p>
+        <p> Mercury's surface is similar in appearance to that of the Moon, showing
+          extensive mare-like plains and heavy cratering, indicating that it has
+          been geologically inactive for billions of years. It is more heterogeneous
+          than either Mars's or the Moon's.</p>
+        <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology">Wikipedia
+            <object data="./assets/icon-source.svg"></object> </a></p>
       </div>
 
     </div>
     <div class="button-holder">
       <ol>
-        <li><button class="btn-content overview"><span class="btn-text-number">01</span>OVERVIEW</button></li>
-        <li><button class="btn-content structure"><span class="btn-text-number">02</span>INTERNAL STRUCTURE</button></li>
+        <li><button class="btn-content overview active bg-mercury "><span class="btn-text-number">01</span>OVERVIEW</button></li>
+        <li><button class="btn-content structure"><span class="btn-text-number">02</span>INTERNAL STRUCTURE</button>
+        </li>
         <li><button class="btn-content"><span class="btn-text-number">03</span>SURFACE GEOLOGY</button></li>
       </ol>
     </div>
