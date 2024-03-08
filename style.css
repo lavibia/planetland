@@ -26,6 +26,7 @@
     font-size: 28px;
     font-weight: 500;
     letter-spacing: -1.05px;
+    padding: 15px 30px;
 }
 h1{
     font-family: "Antonio", sans-serif;
@@ -64,29 +65,28 @@ body{
     line-height: 25px;
     font-weight: 400;
     color: var(--color-white);
+    gap:0px;
     
 }
 .header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: fit-content;
-margin: 15px 30px;
+    
+}
+.phone-nav{
+    display: none;
+}
+.hamburger{
+    display: none;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    
+    padding: 0px 30px;
 }
-.nav-color{
 
-    height: 2px;
-    border-radius: 1px;
-   width: 100%;
-   margin-top: -30px;
-   margin-bottom:30px ;
-    content: " ";}
 .nav a{
     text-decoration: none;
     color: var(--color-light);
@@ -95,10 +95,16 @@ margin: 15px 30px;
 .nav li{
     display: inline;
     width: fit-content;
+    height: 100%;
+    /* border-top:2px solid var(color); */
+    padding: 15px 0px;
 }
 hr{
     height: 0.5px;
     border:1px solid var(--color-light);
+}
+.phone-hr{
+    display: none;
 }
 
 .content{
@@ -279,12 +285,9 @@ button:hover:not(.active){
         margin: 0;;
     }
     .logo{
-        margin: 20px 0px;
         justify-self: center;
     }
-    .nav{
-        margin: 0px 20px;
-    }
+    
     .content{
         grid-template-columns: repeat(12,48px);
         grid-template-rows: repeat(12,60px);
@@ -313,8 +316,101 @@ button:hover:not(.active){
     }
 }
 /* phones */
-@media (max-width: 480px) {
-    body {
-        background-color: red;
+@media (max-width: 767px) {
+    h1{
+        font-size: 40px;
+        letter-spacing: 0px;
+        line-height: normal;
+    }
+    h2{
+        font-size: 24px;
+        letter-spacing: -0.75px;
+    }
+    h3, button{
+        font-size: 9px;
+        letter-spacing: 1.93px;
+    }
+
+    h4{
+       font-size: 15px;
+       line-height: 25px;
+       letter-spacing: 1.36px; 
+    }
+    body{
+        font-size: 11px;
+        line-height: 22px;
+    }
+    a{
+        font-size: 12px;
+    }
+    .nav{
+        display: none;
+    }
+    .phone-nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        justify-self: end;
+        padding: 0px 30px;
+        padding-top: 19px;
+        
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(16,55px);
+        margin: 0px;
+    }
+    .button-holder{
+        grid-area: 1/1/2/13;
+        width: 100%;
+    }
+    .button-holder ol{
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .button-holder li{
+        width: 100%;
+    }
+    .btn-text-number{
+        display: none;
+    }
+
+    .phone-hr{
+        display: block;
+    }
+    .button-holder button{
+        text-align: center;
+        border:none;
+    }
+   
+    .img-holder{
+        grid-area: 3/1/9/13;
+        padding: 0px 30px;
+    }
+    .content-holder{
+        grid-area: 9/1/13/13;
+        text-align: center;
+
+        padding: 0px 30px;
+    }
+    .summary-holder{
+        grid-area: 13/1/16/13;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 0px 30px;
+        gap: 10px;
+    }
+    .summary-holder> div{
+        padding: 10px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }

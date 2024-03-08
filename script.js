@@ -1,10 +1,34 @@
+let btnOverview=document.getElementById("btnOverview");
+let btnStructure=document.getElementById("btnStructure");
+let btnSurface=document.getElementById("btnSurface");
+
+
+// const phoneMedia=window.matchMedia("(max-width: 767px)");
+
+// phoneMedia.addEventListener("change", function(){
+//       if (phoneMedia.matches) {
+//             btnOverview.textContent='Overview';
+//             btnStructure.textContent='Structure';
+//             btnSurface='Surface';
+//        }
+//        else{
+//              btnOverview.textContent='<span class="btn-text-number">01</span>OVERVIEW';
+//              btnStructure.textContent='<span class="btn-text-number">02</span>INTERNAL STRUCTURE';
+//              btnSurface.textContent='<span class="btn-text-number">03</span>SURFACE GEOLOGY';
+//        } 
+       
+// })
+
+
+
 let btnContent=document.querySelector(".btn-content");
 
 let planet= document.getElementById("title").textContent.toLowerCase();
+
 console.log(planet);
 //btnContent[i].classList.add
 console.log(`active-${planet}`);
-btnContent.classList.add(`active-${planet}`)
+btnContent.style.borderBottom =`3px solid var(--color-${planet})`
 console.log(btnContent);
 
 // for(let i=0;i<btnContent.length;i++){
