@@ -20,6 +20,28 @@ let btnSurface=document.getElementById("btnSurface");
 // })
 
 
+ let hamburgerIcon= document.querySelector('.hamburger');
+ let phoneNav=document.querySelector(".phone-nav");
+ let content= document.querySelector(".content");
+hamburgerIcon.addEventListener("click",()=>{
+      if(phoneNav.style.display=="flex"){
+            hamburgerIcon.style.filter='none';
+            phoneNav.style.display="none"
+      }else{
+            phoneNav.style.display="flex"
+            phoneNav.style.left=0;
+            hamburgerIcon.style.filter='invert(21%) sepia(11%) saturate(1402%) hue-rotate(201deg) brightness(92%) contrast(89%)';
+      }
+})
+// const navLink = document.querySelectorAll(".nav-link");
+
+// navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+// function closeMenu() {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active");
+// }
+
 
 let btnContent=document.querySelector(".btn-content");
 
