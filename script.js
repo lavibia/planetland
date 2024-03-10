@@ -1,38 +1,64 @@
-let btnOverview=document.getElementById("btnOverview");
-let btnStructure=document.getElementById("btnStructure");
-let btnSurface=document.getElementById("btnSurface");
+let btnOverview = document.getElementById("btnOverview");
+let btnStructure = document.getElementById("btnStructure");
+let btnSurface = document.getElementById("btnSurface");
+let hamburgerIcon = document.querySelector('.hamburger');
+let phoneNav = document.querySelector(".phone-nav");
+let content = document.querySelector(".content");
+let desktopNavLinks = document.getElementsByClassName('nav')[0].children;
+console.log(desktopNavLinks);
 
 
-// const phoneMedia=window.matchMedia("(max-width: 767px)");
+//Planet color on nav item hover
+for (let i = 0; i < desktopNavLinks.length; i++) {
+      desktopNavLinks[i].setAttribute('onmouseenter', 'displayHoverNavColor(event.target)')
+      desktopNavLinks[i].setAttribute('onmouseleave', 'displayHoverNavColor(event.target)')
+}
 
-// phoneMedia.addEventListener("change", function(){
-//       if (phoneMedia.matches) {
-//             btnOverview.textContent='Overview';
-//             btnStructure.textContent='Structure';
-//             btnSurface='Surface';
-//        }
-//        else{
-//              btnOverview.textContent='<span class="btn-text-number">01</span>OVERVIEW';
-//              btnStructure.textContent='<span class="btn-text-number">02</span>INTERNAL STRUCTURE';
-//              btnSurface.textContent='<span class="btn-text-number">03</span>SURFACE GEOLOGY';
-//        } 
-       
-// })
+function displayHoverNavColor() {
+      if (event.type == "mouseenter") {
+            //get the link planet to set the color
+            let link = event.target.children[0].getAttribute('href');
+            let planet = link.slice(2, link.lastIndexOf('.'))
+            if (planet == 'index')
+                  planet = 'mercury'
+
+            event.target.style.borderTop = `2px solid var(--color-${planet}`;
+      } else {
+            event.target.style.borderTop = '0px';
+      }
+}
 
 
- let hamburgerIcon= document.querySelector('.hamburger');
- let phoneNav=document.querySelector(".phone-nav");
- let content= document.querySelector(".content");
-hamburgerIcon.addEventListener("click",()=>{
-      if(phoneNav.style.display=="flex"){
-            hamburgerIcon.style.filter='none';
-            phoneNav.style.display="none"
-      }else{
-            phoneNav.style.display="flex"
-            phoneNav.style.left=0;
-            hamburgerIcon.style.filter='invert(21%) sepia(11%) saturate(1402%) hue-rotate(201deg) brightness(92%) contrast(89%)';
+//TOGGLE PHONE NAVIGATION
+hamburgerIcon.addEventListener("click", () => {
+      if (phoneNav.style.display == "flex") {
+            hamburgerIcon.style.filter = 'none';
+            phoneNav.style.display = "none"
+      } else {
+            phoneNav.style.display = "flex"
+            phoneNav.style.left = 0;
+            hamburgerIcon.style.filter = 'invert(21%) sepia(11%) saturate(1402%) hue-rotate(201deg) brightness(92%) contrast(89%)';
       }
 })
+
+//change buttons text on phone view
+const phoneMedia=window.matchMedia("(max-width: 767px)");
+phoneMedia.addEventListener("change", function(){
+      if (phoneMedia.matches) {
+            btnOverview.innerHTML='OVERVIEW';
+            btnStructure.innerHTML='STRUCTURE';
+            btnSurface.innerHTML='SURFACE';
+       }
+       else{
+             btnOverview.innerHTML='<span class="btn-text-number">01</span>OVERVIEW';
+             btnStructure.innerHTML='<span class="btn-text-number">02</span>INTERNAL STRUCTURE';
+             btnSurface.innerHTML='<span class="btn-text-number">03</span>SURFACE GEOLOGY';
+       } 
+
+})
+
+
+
 // const navLink = document.querySelectorAll(".nav-link");
 
 // navLink.forEach(n => n.addEventListener("click", closeMenu));
@@ -43,21 +69,21 @@ hamburgerIcon.addEventListener("click",()=>{
 // }
 
 
-let btnContent=document.querySelector(".btn-content");
+let btnContent = document.querySelector(".btn-content");
 
-let planet= document.getElementById("title").textContent.toLowerCase();
+let planet = document.getElementById("title").textContent.toLowerCase();
 
 console.log(planet);
 //btnContent[i].classList.add
 console.log(`active-${planet}`);
-btnContent.style.borderBottom =`3px solid var(--color-${planet})`
+btnContent.style.borderBottom = `3px solid var(--color-${planet})`
 console.log(btnContent);
 
 // for(let i=0;i<btnContent.length;i++){
 //     btnContent[i].addEventListener("onclick",()=>{
-        console.log(planet);
-        //btnContent[i].classList.add
-        console.log(`active-${planet}`);
+console.log(planet);
+//btnContent[i].classList.add
+console.log(`active-${planet}`);
 //     })
 // }
 //
