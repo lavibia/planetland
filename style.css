@@ -131,10 +131,14 @@ hr{
 .img-holder object{
    justify-self: center;
     grid-area: 1/4/5/7;
+   
+
 }
 .img-holder img{
     grid-area: 4/4/8/7;
+
 }
+
 .content-holder{
     grid-area: 2/9/7/13;
     display: grid;
@@ -301,6 +305,10 @@ button:hover:not(.active){
         grid-area: 1/1/6/13;
     }
     
+    .img-holder> *{
+        transform: scale(0.9);
+    }
+
     .content-holder{
         grid-area: 7/1/11/7;
     }
@@ -427,6 +435,13 @@ button:hover:not(.active){
     .img-holder{
         grid-area: 3/1/9/13;
         padding: 0px 30px;
+    }
+    .img-holder> *{
+        transform: scale(0.6);
+    }
+    .img-holder img{
+        grid-area: 3/5/6/6;
+    
     }
     .content-holder{
         grid-area: 9/1/13/13;
