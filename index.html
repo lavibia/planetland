@@ -16,63 +16,98 @@
     <div class="header">
       <p class="logo">THE PLANETS</p>
       <!-- <nav> -->
-        <div class="hamburger"><img src="./assets/icon-hamburger.svg" alt=""></div>
-        <nav class="phone-nav">
-          <ul>
-            <li><div class="circle"><a href="./index.html">
-              <h4>MERCURY</h4>
-            </a></div>
-              </li>
-            <li><a href="">
-                <h4>VENUS</h4>
-              </a></li>
-            <li><a href="">
-                <h4>EARTH</h4>
-              </a></li>
-            <li><a href="">
-                <h4>MARS</h4>
-              </a></li>
-            <li><a href="">
-                <h4>JUPITER</h4>
-              </a></li>
-            <li><a href="">
-                <h4>SATURN</h4>
-              </a></li>
-            <li><a href="">
-                <h4>URANUS</h4>
-              </a></li>
-            <li><a href="">
-                <h4>NEPTUNE</h4>
-              </a></li>
-          </ul>
-        </nav>
-      <ul class="nav">
+      <div class="hamburger"><img src="./assets/icon-hamburger.svg" alt=""></div>
+      <nav class="phone-nav">
+        <ul>
           <li>
-            <a href="">
+            <div class="circle bg-mercury"></div>
+            <a href="./index.html">
               <h4>MERCURY</h4>
-            </a></li>
-          <li><a href="">
+            </a>
+            <img src="./assets/icon-chevron.svg">
+          </li>
+          <li>
+            <div class="circle bg-venus"></div>
+            <a href="./venus.html">
               <h4>VENUS</h4>
-            </a></li>
-          <li><a href="">
+            </a>
+            <img src="./assets/icon-chevron.svg">
+          </li>
+          <li>
+            <div class="circle bg-earth"></div>
+            <a href="./earth.html">
               <h4>EARTH</h4>
-            </a></li>
-          <li><a href="">
+            </a>
+            <img src="./assets/icon-chevron.svg">
+          </li>
+          <li>
+            <div class="circle bg-mars"></div>
+            <a href="./mars.html">
               <h4>MARS</h4>
-            </a></li>
-          <li><a href="">
+            </a>
+            <img src="./assets/icon-chevron.svg">
+
+          </li>
+          <li>
+            <div class="circle bg-jupiter"></div>
+            <a href="./jupiter.html">
               <h4>JUPITER</h4>
-            </a></li>
-          <li><a href="">
+            </a>
+            <img src="./assets/icon-chevron.svg">
+
+          </li>
+          <li>
+            <div class="circle bg-saturn"></div>
+            <a href="./saturn.html">
               <h4>SATURN</h4>
-            </a></li>
-          <li><a href="">
+            </a>
+            <img src="./assets/icon-chevron.svg">
+
+          </li>
+          <li>
+            <div class="circle bg-uranus"></div>
+            <a href="./uranus.html">
               <h4>URANUS</h4>
-            </a></li>
-          <li><a href="">
+            </a>
+            <img src="./assets/icon-chevron.svg">
+          </li>
+          <li>
+            <div class="circle bg-neptune"></div>
+            <a href="./neptune.html">
               <h4>NEPTUNE</h4>
-            </a></li>
+            </a>
+            <img src="./assets/icon-chevron.svg">
+          </li>
         </ul>
+      </nav>
+      <ul class="nav">
+        <li onmouseenter="displayHoverNavColor(event)">
+          <a href="./index.html">
+            <h4>MERCURY</h4>
+          </a>
+        </li>
+        <li> <a href="./venus.html">
+            <h4>VENUS</h4>
+          </a></li>
+        <li><a href="./earth.html">
+            <h4>EARTH</h4>
+          </a></li>
+        <li><a href="./mars.html">
+            <h4>MARS</h4>
+          </a></li>
+        <li><a href="./jupiter.html">
+            <h4>JUPITER</h4>
+          </a></li>
+        <li> <a href="./saturn.html">
+            <h4>SATURN</h4>
+          </a></li>
+        <li><a href="./uranus.html">
+            <h4>URANUS</h4>
+          </a></li>
+        <li><a href="./neptune.html">
+            <h4>NEPTUNE</h4>
+          </a></li>
+      </ul>
       <!-- </nav> -->
     </div>
     <hr>
@@ -114,10 +149,13 @@
     </div>
     <div class="button-holder">
       <ol>
-        <li><button class="btn-content overview active  " id="btnOverview"><span class="btn-text-number">01</span>OVERVIEW</button></li>
-        <li><button class="btn-content structure" id="btnStructure"><span class="btn-text-number">02</span>INTERNAL STRUCTURE</button>
+        <li><button class="btn-content overview active  " id="btnOverview"><span
+              class="btn-text-number">01</span>OVERVIEW</button></li>
+        <li><button class="btn-content structure" id="btnStructure"><span class="btn-text-number">02</span>INTERNAL
+            STRUCTURE</button>
         </li>
-        <li><button class="btn-content" id="btnSurface"><span class="btn-text-number">03</span>SURFACE GEOLOGY</button></li>
+        <li><button class="btn-content" id="btnSurface"><span class="btn-text-number">03</span>SURFACE GEOLOGY</button>
+        </li>
       </ol>
       <hr class="phone-hr">
     </div>
