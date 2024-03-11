@@ -144,14 +144,16 @@ hr {
 }
 
 .img-holder object {
+    z-index: -5;
     justify-self: center;
-    grid-area: 1/4/5/7;
+    grid-area: 1/2/10/9;
 
 
 }
 
 .img-holder img {
-    grid-area: 4/4/8/7;
+    grid-area: 9/2/10/9;
+    z-index: -2;
 
 }
 
@@ -344,11 +346,11 @@ button:hover:not(.active) {
     }
 
     .img-holder {
-        grid-area: 1/1/6/13;
+        grid-area: 1/1/7/13;
     }
 
     .img-holder>* {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 
     .content-holder {
@@ -497,18 +499,18 @@ button:hover:not(.active) {
     }
 
     .img-holder {
-        grid-area: 3/1/9/13;
+        grid-area: 2/1/9/13;
         padding: 0px 30px;
     }
 
-    .img-holder>* {
-        transform: scale(0.6);
+    .img-holder> object {
+        transform: scale(0.7);
     }
 
     .img-holder img {
-        grid-area: 3/5/6/6;
+        transform: scale(0.6);
 
-    }
+    } 
 
     .content-holder {
         grid-area: 9/1/13/13;
