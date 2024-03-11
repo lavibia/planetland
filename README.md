@@ -12,9 +12,6 @@ This repository contains my solution to the [Planets Fact Site challenge on Fron
   - [Built With](#built-with)
   - [What I Learned](#what-i-learned)
   - [Continued Development](#continued-development)
-  - [Useful Resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live [DEMO](https://lavibia.github.io/planetland/)
 
 ## My Process
 
@@ -52,16 +49,10 @@ During this project, I learned:
 
 - Employing CSS Grid and Flexbox for responsive layouts.
 - Implementing hover states for interactive elements to enhance user experience.
+- Display specific elements when users interact with the interface/ screen orientation. (understanding event handling in JavaScript and manipulating the DOM to dynamically show or hide content based on user actions)
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-css
-Copy code
-.proud-of-this-css {
-  color: papayawhip;
-}
+
 ```javascript
-Copy code
 const proudOfThisFunc = () => {
   phoneMedia.addEventListener("change", function () {
   Array(btnOverview, btnStructure, btnSurface).forEach(btn => {
@@ -72,18 +63,20 @@ const proudOfThisFunc = () => {
   });
 })
 }
-Continued Development
+```
+### Continued Development
 In future projects, I plan to focus on:
 
-Enhancing my understanding of advanced CSS techniques.
-Improving performance optimization strategies.
-Exploring more features and libraries in React ecosystem.
-Useful Resources
-Example resource 1 - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-Example resource 2 - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-Author
-Website - Add your name here
-Frontend Mentor - @yourusername
-Twitter - @yourusername
-Acknowledgments
-I'd like to acknowledge Frontend Mentor for providing this challenge and the community for valuable feedback and support.
+#### Accessibility:
+
+Improving accessibility involves making web content usable by everyone, including people with disabilities. I aim to:
+- Implement best practices such as providing alternative text for images, ensuring keyboard navigation, and using semantic HTML elements.
+- Familiarize myself with WCAG (Web Content Accessibility Guidelines) standards and integrate them into my development process.
+
+#### SEO (Search Engine Optimization):
+
+Enhancing SEO helps websites rank higher in search engine results, leading to increased visibility and traffic. My goals include:
+- Improving website performance and speed to enhance user experience and meet search engine ranking factors.
+- Implementing structured data markup to provide search engines with additional context about the content.
+- Staying updated with the latest SEO trends and algorithms to adapt strategies effectively.
+
