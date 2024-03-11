@@ -55,10 +55,11 @@ hamburgerIcon.addEventListener("click", () => {
 })
 
 
-
+changeTxtPhoneButtons();
 //change buttons text on phone view
 
-phoneMedia.addEventListener("change", function () {
+phoneMedia.addEventListener("change", changeTxtPhoneButtons);
+function changeTxtPhoneButtons () {
   if (phoneMedia.matches) {
     btnOverview.innerHTML = 'OVERVIEW';
     btnStructure.innerHTML = 'STRUCTURE';
@@ -70,7 +71,7 @@ phoneMedia.addEventListener("change", function () {
     btnSurface.innerHTML = '<span class="btn-text-number">03</span>SURFACE GEOLOGY';
   }
 
-})
+}
 phoneMedia.addEventListener("change", function () {
   Array(btnOverview, btnStructure, btnSurface).forEach(btn => {
     if (btn.classList.contains('active')) {
